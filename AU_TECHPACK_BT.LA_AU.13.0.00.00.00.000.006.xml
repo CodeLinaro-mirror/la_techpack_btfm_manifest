@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://git.codelinaro.org/clo/la" name="clo" review="codelinaro.org"/>
+  <default remote="clo" revision="BT.LA_AU.13.0" sync-j="8"/>
+  <project dest-branch="refs/heads/bt-sys.lnx.13.1" name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="64c833dded2c99973a7005d47c2e063df2b7f284" upstream="refs/heads/bt-sys.lnx.13.1"/>
+  <project dest-branch="refs/heads/bt-sysintf.lnx.13.1" name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" revision="f8f75419ed50a7c0c55fe397e90592e1e51d5cc6" upstream="refs/heads/bt-sysintf.lnx.13.1"/>
+  <project dest-branch="refs/heads/bt-kernel.lnx.13.1" name="platform/vendor/qcom-opensource/bt-kernel" path="vendor/qcom/opensource/bt-kernel" revision="72f6b0acb150985bf81e3b30ee3f25ccc50fae41" upstream="refs/heads/bt-kernel.lnx.13.1">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt_kernel_vendor_board.mk" src="bt_kernel_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/bt_kernel_product_board.mk" src="bt_kernel_product_board.mk"/>
+  </project>
+  <project dest-branch="refs/heads/bt-sys.lnx.13.1" name="platform/vendor/qcom-opensource/packages/modules/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/modules/Bluetooth" revision="9c635d19c8ab6f411ac4f2362d7c9e324456b6ac" upstream="refs/heads/bt-sys.lnx.13.1"/>
+</manifest>
