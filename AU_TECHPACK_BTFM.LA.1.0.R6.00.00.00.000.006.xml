@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch="https://git.codelinaro.org/clo/la" name="clo-la"/>
+  <default remote="clo-la" revision="dummy_revision" sync-c="true" sync-tags="false"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/bt-devicetree" path="vendor/qcom/opensource/bt-devicetree" revision="4895a5e5ae3a4ce67a190dc93799719e94eff1da" upstream="refs/heads/bt-kernel.lnx.15.0.r7-rel"/>
+  <project remote="clo-la" name="platform/vendor/qcom-opensource/bt-kernel" path="vendor/qcom/opensource/bt-kernel" revision="3d8980ffff65ff7b71ec8fffa86910104d623012" upstream="refs/heads/bt-kernel.lnx.15.0.r7-rel">
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/bt_kernel_vendor_board.mk" src="bt_kernel_vendor_board.mk"/>
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/bt_kernel_product_board.mk" src="bt_kernel_product_board.mk"/>
+  </project>
+  <project remote="clo-la" name="platform/vendor/qcom/opensource/bt-external" path="vendor/qcom/opensource/bt-external" revision="08d4f4abfdf9415916c6a8b6257d789bd979505b" upstream="refs/heads/bt-vndr.lnx.15.0.r9-rel">
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/btfm_techpack.mk" src="btfm_techpack.mk"/>
+  </project>
+</manifest>
